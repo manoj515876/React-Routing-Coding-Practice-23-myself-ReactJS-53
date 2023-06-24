@@ -4,6 +4,7 @@
   margin-top: 20px;
   padding: 15px;
 }
+
 @media screen and (min-width: 575px) {
   .blog-container {
     display: flex;
@@ -16,9 +17,10 @@
 .blog-info {
   width: 100%;
 }
+
 @media screen and (min-width: 575px) {
   .blog-info {
-    width: 660px;
+    max-width: 660px;
   }
 }
 
@@ -26,13 +28,14 @@
   font-size: 14px;
   text-align: center;
   font-weight: bold;
-  font-family: 'Roboto';
+  font-family: roboto;
 }
+
 @media screen and (min-width: 575px) {
   .blog-details-title {
     font-size: 28px;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: roboto;
   }
 }
 
@@ -48,6 +51,7 @@
   margin-right: 10px;
   border-radius: 50%;
 }
+
 .blog-author-name {
   color: #8e8e8e;
   font-size: 14px;
@@ -59,12 +63,11 @@
   border-radius: 8px;
   object-fit: cover;
 }
+
 @media screen and (min-width: 575px) {
   .blog-image {
-    width: 660px;
+    max-width: 660px;
     height: 300px;
-    border-radius: 8px;
-    object-fit: cover;
   }
 }
 
@@ -72,5 +75,5 @@
   margin-top: 15px;
   font-family: 'Roboto';
   line-height: 24px;
-  color: darkslategrey;
+  color: #2f4f4f;
 }

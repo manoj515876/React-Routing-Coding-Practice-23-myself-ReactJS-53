@@ -1,23 +1,27 @@
-import './index.css'
 import {Link} from 'react-router-dom'
 
+import './index.css'
+
 const BlogItem = props => {
-  const {blogItems} = props
-  const {id, imageUrl, topic, title, avatarUrl, author} = blogItems
+  const {blogItemDetails} = props
+  const {id, imageUrl, topic, title, avatarUrl, author} = blogItemDetails
+
   return (
-    <Link to={`/blogs/${id}`} className="blog-item-link">
-      <li className="list-card">
-        <img src={imageUrl} alt={`blog${id}`} className="card-img" />
-        <div className="list-card-details">
-          <p className="para">{topic}</p>
-          <h1 className="heading-title">{title}</h1>
-          <div className="avatar-card">
-            <img src={avatarUrl} alt={`avatar${id}`} className="avatar-img" />
-            <p className="para">{author}</p>
+    <li className="blog-item">
+      <Link to={`/blogs/${id}`} className="blog-item-link">
+        <div className="blog-item-container">
+          <img className="blog-item-image" src={imageUrl} alt={`item${id}`} />
+          <div className="blog-item-info">
+            <p className="blog-item-topic">{topic}</p>
+            <h1 className="blog-item-title">{title}</h1>
+            <div className="author-info">
+              <img className="avatar" src={avatarUrl} alt={`avatar${id}`} />
+              <p className="author-name">{author}</p>
+            </div>
           </div>
         </div>
-      </li>
-    </Link>
+      </Link>
+    </li>
   )
 }
 
