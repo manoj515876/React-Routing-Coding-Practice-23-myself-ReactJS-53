@@ -1,0 +1,47 @@
+.list-card {
+  display: flex;
+  box-shadow: 1px 1px 1px 1px #2f4f4f;
+  padding: 30px;
+  margin: 30px;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+}
+
+.list-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  margin-left: 20px;
+}
+
+.avatar-card {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.para {
+  font-family: Roboto;
+  color: #d3d3d3;
+}
+
+.heading-title {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #000000;
+}
+
+.blog-item-link {
+  text-decoration: none;
+  cursor: pointer;
+}
